@@ -1,3 +1,8 @@
+基于react-native-calendars 1.31.0 版本
+改动 :
+1. 增加onLongDayPress;
+2. 增加自定义mark (markingType={'number'});
+
 # React Native Calendars ✨ 🗓️ 📆
 
 [![Version](https://img.shields.io/npm/v/react-native-calendars.svg)](https://www.npmjs.com/package/react-native-calendars)

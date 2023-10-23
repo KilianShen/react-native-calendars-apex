@@ -1,6 +1,6 @@
 {
-  "name": "react-native-calendars",
-  "version": "1.22.0",
+  "name": "react-native-calendars-apex",
+  "version": "0.0.2",
   "main": "src/index.js",
   "description": "React Native Calendar Components",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wix/react-native-calendars"
+    "url": "git+https://github.com/KilianShen/react-native-calendars-apex"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
