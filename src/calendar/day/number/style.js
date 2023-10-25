@@ -11,7 +11,7 @@ export default function styleConstructor(theme={}) {
       flexDirection: "column",
       alignItems: "center",
       height:32,
-      width:52,
+      width:49,
       display:'flex',
       flexDirection:'row',
       position:'relative',
@@ -57,7 +57,8 @@ export default function styleConstructor(theme={}) {
       opacity: 0
     },
     dotView:{
-      width: 25,
+      maxWidth: 25,
+      minWidth:18,
       backgroundColor: "#8B9BE1",
       borderTopRightRadius: 8,
       borderBottomRightRadius: 8,
@@ -69,7 +70,7 @@ export default function styleConstructor(theme={}) {
     dotNumber:{
       textAlign: "center", 
       color: "#fff", 
-      fontSize: 14
+      fontSize: 13
     },
     visibleDot: {
       opacity: 1,

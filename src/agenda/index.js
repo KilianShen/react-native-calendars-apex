@@ -46,6 +46,8 @@ export default class AgendaView extends Component {
     onDaychange: PropTypes.func,
     // specify how each item should be rendered in agenda
     renderItem: PropTypes.func,
+    // specify how all content should be rendered in agenda
+    renderContent: PropTypes.func,
     // specify how each date should be rendered. day can be undefined if the item is not first in that day.
     renderDay: PropTypes.func,
     // specify how agenda knob should look like
@@ -390,7 +392,8 @@ export default class AgendaView extends Component {
     return (
       <View onLayout={this.onLayout} style={[this.props.style, {flex: 1, overflow: 'hidden'}]}>
         <View style={this.styles.reservations}>
-          {this.renderReservations()}
+          {this.props.renderContent instanceof Function && this.props.renderContent()}
+          {this.props.renderItem instanceof Function && this.renderReservations()}
         </View>
         <Animated.View style={headerStyle}>
           <Animated.View style={{flex:1, transform: [{ translateY: contentTranslate }]}}>
