@@ -2,6 +2,7 @@
 改动 :
 1. 增加onLongDayPress;
 2. 增加自定义mark (markingType={'number'});
+3. 增加自定义渲染 (renderContent)
 
 # React Native Calendars ✨ 🗓️ 📆
 
